@@ -34,28 +34,15 @@ if (isset($_POST["btn_giris"]) )
       
     }
 
-
-
 	}
 	else{
 		echo '<div>Böyle Bir Kullanıcı bulunamadı!</div>';
 	}
 
-
 	mysqli_close($baglanti);
 	}
 }
-
 ?>
-
-
-
-
-
-
-
-
-
 
 <!doctype html>
 <html lang="tr">
@@ -100,16 +87,6 @@ if (isset($_POST["btn_giris"]) )
             </div>
           </div>
       </header>
-
-
-
-
-
-
-
-
-
-
 
   </body>
 </html>
