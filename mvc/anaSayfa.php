@@ -13,7 +13,12 @@
         session_start();
         //tabloların verileri
         if ($_SESSION["ad"]=="yazar") {
-            echo '<h3 class="h3">Hoş Geldiniz : '.$_SESSION["ad"].'</h3>';
+            echo '<h3 class="h3">Hoş Geldiniz : '.$_SESSION["ad"].'</h3>
+                <form class="" action="parola.php" method="POST">
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" type="submit" name="btn_parolaDegis">
+                    Parola Değiştir</button>
+                </form>
+            ';
             $bul="select * from yazar";
             $kayit=$baglanti->query($bul);
         }
@@ -24,7 +29,6 @@
                     Parola Değiştir</button>
                 </form>
             ';
-            $_SESSION["ad"]="user";
             $bul="select * from user";
             $kayit=$baglanti->query($bul);
         }

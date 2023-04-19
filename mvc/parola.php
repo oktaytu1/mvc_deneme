@@ -60,7 +60,7 @@ if (isset($_POST["btn_parolaDegistir"]))
                 </div>
           
                 <div class="modal-body p-5 pt-0">
-                  <form class="" action="parola.php" method="POST">
+                  <form action="parola.php" method="POST">
                     <div class="form-floating mb-3">
                       <input name="txt_eskiParola" type="text" class="form-control rounded-3" id="floatingInput" placeholder="Eski Parola">
                       <label for="floatingInput">Eski Parola</label>
@@ -72,7 +72,9 @@ if (isset($_POST["btn_parolaDegistir"]))
                     </div>
 
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" name="btn_parolaDegistir">Parola Değiştir</button>
+                  </form>
                     <hr>
+                    <form action="giris.php">
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" type="submit" name="btn_girisSayfasi">Giriş Sayfasına Dön</button>
                   </form>
                 </div>
